@@ -1,0 +1,395 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 2.5em;
+  padding-left: 20px;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffdd59;
+}
+
+/* Main Content */
+.home,
+.findus,
+.aboutus {
+  padding: 20px;
+  background: #fff;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #6a11cb;
+  font-size: 2.5em;
+}
+
+main h2 {
+  color: #2575fc;
+  margin-top: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+section {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+article {
+  padding: 15px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 5px solid #6a11cb;
+}
+
+article h3 {
+  color: #1e88e5;
+  margin: 0 0 10px;
+}
+
+article ul {
+  list-style-type: circle;
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.recipe-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(106, 17, 203);
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-weight: bold;
+}
+
+.products,
+.recipes {
+  padding: 20px;
+  background: #fff;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Buttons and Links */
+.cta {
+  display: inline-block;
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #e53935;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #ffdd59;
+}
+
+footer .newsletter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: #34495e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .newsletter h2 {
+  color: #ffdd59;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+footer .newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+footer .newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  width: 250px;
+}
+
+footer .newsletter button {
+  padding: 10px 20px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer .newsletter button:hover {
+  background: #e53935;
+}
+
+/* Grid for Testimonials and Features */
+.features,
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.features .feature,
+.testimonials .testimonial {
+  padding: 10px;
+  background: #ffe082;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 760px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  header .logo h1 {
+    font-size: 2em;
+    padding-left: 0;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    font-size: 1.1em;
+  }
+
+  /* Main */
+  main {
+    padding: 15px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  main h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  section {
+    margin: 15px 0;
+  }
+
+  article {
+    padding: 15px;
+    border-left: 4px solid #6a11cb;
+  }
+
+  article h3 {
+    font-size: 1.5em;
+  }
+
+  /* CTA Buttons */
+  .cta {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer ul li a {
+    font-size: 1.1em;
+  }
+
+  footer .newsletter {
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer .newsletter form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .newsletter input[type="email"] {
+    width: 100%;
+  }
+
+  /* Features and Testimonials */
+  .features,
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .features .feature,
+  .testimonials .testimonial {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Adjust for smaller devices */
+  body {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    padding: 10px 0;
+  }
+
+  .features .feature h3,
+  .testimonials .testimonial h3 {
+    font-size: 1.4em;
+  }
+
+  .features .feature p,
+  .testimonials .testimonial p {
+    font-size: 1em;
+  }
+
+  .footer .newsletter h2 {
+    font-size: 1.4em;
+  }
+
+  footer .newsletter button {
+    font-size: 1.1em;
+    padding: 12px 20px;
+  }
+}
